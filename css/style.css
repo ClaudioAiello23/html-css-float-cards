@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* 
+***************************
+          HEADER
+***************************
+*/
+
+header{
+    font-family: 'Titan One', cursive;
+    text-align: center;
+}
+
+h1{
+    color: rgb(249, 57, 146);
+    margin: 50px 0;
+}
+
+header p{
+    font-family:  sans-serif;
+}
+
+
+/* 
+***************************
+          MAIN
+***************************
+*/
