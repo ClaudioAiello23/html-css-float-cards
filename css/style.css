@@ -40,8 +40,11 @@ header p{
 
 
 .team_user{
+    float:left;
     background-color: black;
     color: white;
+    margin: 0px 20px 40px 0px;
+    width: calc(1200px / 3 - 20px)
 }
 
 a{
@@ -53,22 +56,26 @@ img{
     float:left;
 }
 
-.team_user::after{
+
+.container::after {
     content:'';
     display:block;
     clear: both;
 }
 
-.team_user{
-    width: 400px;
+.name{
+    font-size: 18px;
+    font-weight: bold;
 }
 
+.job{
+    margin: 5px 0;
+}
 
-
-
-
-
-
+.references{
+    padding:20px;
+    margin-left: 100px;
+}
 
 
 
