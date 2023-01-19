@@ -36,3 +36,17 @@ header p{
           MAIN
 ***************************
 */
+
+.container{
+    background-color: aqua;
+}
+
+.team_user{
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: rgb(28, 185, 238);
+}
+
