@@ -5,7 +5,7 @@
 }
 
 body{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -19,6 +19,7 @@ body{
 header{
     font-family: 'Titan One', cursive;
     text-align: center;
+    margin: 50px 0;
 }
 
 h1{
@@ -37,9 +38,6 @@ header p{
 ***************************
 */
 
-.container{
-    background-color: aqua;
-}
 
 .team_user{
     background-color: black;
@@ -49,4 +47,30 @@ header p{
 a{
     color: rgb(28, 185, 238);
 }
+
+img{
+    height: 100px;
+    float:left;
+}
+
+.team_user::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.team_user{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
