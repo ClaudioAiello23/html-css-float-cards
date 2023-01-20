@@ -11,9 +11,9 @@ body{
 
 
 /* 
-***************************
-          HEADER
-***************************
+***************************************************
+                  HEADER
+***************************************************
 */
 
 header{
@@ -22,55 +22,83 @@ header{
     margin: 50px 0;
 }
 
-h1{
-    color: rgb(249, 57, 146);
-    margin: 50px 0;
-}
+/*---------------------------
+ INIZIO PROVA SELETTORE AVANZATO ":not(p)": tutto quello che è
+"P" figlio di Header è nero e ha un certo margine; tutto quello
+che non è "P" figlio di Header è rosa e ha un certo margine */
 
 header p{
     font-family:  sans-serif;
+    color:black;
+    margin: 50px 0;
 }
+
+header:not(header p) {
+    color: rgb(249, 57, 146);
+    margin: 50px 0;
+  }
+
+  /* FINE PROVA SELETTORE AVANZATO ":not(p)"
+ ---------------------------------  */
+
 
 
 /* 
-***************************
-          MAIN
-***************************
+***************************************************
+                      MAIN
+***************************************************
 */
 
 
 .team_user{
     float:left;
     background-color: black;
-    color: white;
     margin: 0px 20px 40px 0px;
     width: calc(1200px / 3 - 20px)
 }
 
-a{
-    color: rgb(28, 185, 238);
-}
-
 img{
-    height: 100px;
+    height: 107.6px;
     float:left;
 }
 
 
-.container::after {
-    content:'';
-    display:block;
-    clear: both;
+/* ----------------------------
+ INIZIO PROVA SELETTORE AVANZATO ":not(a)" : tutto quello che è
+"a" figlio di Main è azzurro; tutto quello
+che non è "a" figlio di Main è bianco */
+
+main a {
+    color: rgb(28, 185, 238);
 }
 
-.name{
+main:not(main a) {
+    color: white;
+  }
+
+/* FINE PROVA SELETTORE AVANZATO ":not(a)"
+------------------------------ */ 
+
+
+
+/* ------------------------------
+INIZIO PROVA SELETTORE AVANZATO ":nth-of-type(n)" : seleziona il
+primo "div" della classe .references e inserisci font size 18 e metti
+in grassetto*/
+
+.references div:nth-of-type(1){
     font-size: 18px;
     font-weight: bold;
 }
+/* FINE PROVA SELETTORE AVANZATO ":nth-of-type(n)"
+--------------------------------- */ 
 
-.job{
+
+
+.references div:nth-of-type(2){
     margin: 5px 0;
 }
+
 
 .references{
     padding:20px;
@@ -78,6 +106,12 @@ img{
 }
 
 
+/* Pulizia del float in container */
+.container::after {
+    content:'';
+    display:block;
+    clear: both;
+}
 
 
 
